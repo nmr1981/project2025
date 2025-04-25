@@ -1,0 +1,70 @@
+/* Reset all page settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+/*Now style the pricing container*/
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*Style individual cards */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 12 px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 24px;
+    color: #0077cc;
+    margin: 15px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+botton:hover {
+    background-color: #005fa3;
+    
+}
