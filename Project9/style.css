@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cta {
+    background-color: #0077cc;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta p {
+    font-size:  18px;
+    margin: 30px;
+}
+
+.cta-button {
+    background-color: white;
+    color:#0077cc;
+    padding: 12px 24px;
+    font-weight:  bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+    color: white;
+}
