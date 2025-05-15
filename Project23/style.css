@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    padding: 60px 20px;
+}
+
+.profile-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    text-align: center;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.speciality {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stats div {
+    flex: 1;
+}
+
+.stats strong {
+    display: block;
+    font-size: 18px;
+    color: #0077cc;
+}
+
+.stats span {
+    font-size: 13px;
+    color: #666;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
