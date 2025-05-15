@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.slider-section h1 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #0077cc;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slides {
+    position: relative;
+    height: 200px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.slide p{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.slide h3{
+    color: #0077cc;
+}
+
+#slide1:checked ~ .slides #s1,
+#slide2:checked ~ .slides #s2,
+#slide3:checked ~ .slides #s3 {
+    opacity: 1;
+    z-index: 1;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.dots {
+    margin-top: 20px;
+}
+
+.dots label {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#slide1:checked ~ .dots label[for="slide1"],
+#slide2:checked ~ .dots label[for="slide2"],
+#slide3:checked ~ .dots label[for="slide3"] {
+  background-color: #0077cc;
+}
