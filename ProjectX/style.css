@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.site-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 20px;
+    background-color: rgba(240, 231, 247, 0.994);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header100{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header100 img {
+    height: 100px;
+    width: auto;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+
+
+.headnav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.headnav a:hover{
+    color: #0077cc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: azure;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+    border-radius: 6px;
+    top: 100%;
+    right:0%;
+    min-width:180px;
+
+    white-space: nowrap;
+    min-width: 180px;
+    max-width: calc(100vw -40px);
+    overflow: hidden;
+    
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0f0;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display:block;
+    padding-left: 10px;
+    
+   
+}
+
+
+@media (max-width: 900px) {
+    .menu-icon {
+      display: block;
+      
+      align-self: flex-end;
+    }
+  
+    .headnav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 20px;
+      align-items: end;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .headnav {
+      display: flex;
+      
+    }
+  
+    .headnav a,
+    .dropdown > a {
+      padding: 10px 0;
+      text-align: left;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      background: #f8f8f8;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: none; /* Disable hover effect */
+    }
+  
+    .dropdown > a::after {
+      content: ' ▾';
+    }
+  
+    .dropdown > a:active + .dropdown-menu,
+    .dropdown > a:focus + .dropdown-menu {
+      display: block;
+    }
+}
