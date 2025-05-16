@@ -141,3 +141,55 @@
       display: block;
     }
 }
+
+.headingtop {
+    padding:30px;
+    background-color: white;
+}
+.div1heading {
+    background-color: rgba(240, 231, 247, 0.994);
+    padding: 20px 150px;
+    margin: 20px 20px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 12px;
+    color: #333;
+}
+
+.div1heading .logo .MDCAT {
+    color: #3B66FF;
+    font-weight: bold;
+}
+
+.div1heading .logo .Xpert {
+    color: red;
+    font-style: italic;
+}
+
+.opening {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.opening #button1{
+    padding:20px 40px;
+    background-color: #3B66FF;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.opening #button1:hover {
+    background-color: rgba(240, 231, 247, 0.994); 
+    color: #333;
+}
+
+.opening p {
+    font-size: 32px;
+    padding: 20px 40px;
+    font-weight: bolder;
+}
+
